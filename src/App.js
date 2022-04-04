@@ -14,7 +14,7 @@ function App() {
         <Player player={1} hand={playerOneHand} />
         <Player player={2} hand={playerTwoHand} />
         <Player player={3} hand={playerThreeHand} />
-        <CardList player={'deck'} cards={deck} />
+        <CardList player="deck" cards={deck} />
       </section>
       <section>{selectedCard && <ExecutePassButton />}</section>
     </div>

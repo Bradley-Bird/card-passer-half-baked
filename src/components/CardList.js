@@ -2,11 +2,11 @@ import React from 'react';
 
 import Card from './Card';
 
-export default function CardList({ cards }) {
+export default function CardList({ cards, player }) {
   return (
     <div className="card-list">
       {cards.map((card) => (
-        <Card key={card.suit + card.value} card={card} />
+        <Card key={card.suit + card.value} card={card} player={player} />
       ))}
     </div>
   );
